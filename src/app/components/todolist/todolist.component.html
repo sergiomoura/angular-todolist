@@ -1,7 +1,7 @@
 <div class="container">
 
   <div class="controles">
-    <input (keydown.enter)="addItem()" type="text" [(ngModel)]="novoTexto">
+    <input focus (keydown.enter)="addItem()" type="text" [(ngModel)]="novoTexto">
     <button (click)="addItem()">Adicionar</button>
   </div>
 
