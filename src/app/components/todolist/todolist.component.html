@@ -15,4 +15,8 @@
       {{item.texto}}
     </li>
   </ul>
+
+  <div *ngIf="lista.length>0" class="inf-controles">
+    <button (click)="cleanList()">Limpar Lista</button>
+  </div>
 </div>

@@ -24,7 +24,7 @@ li.feito{
   outline: none; /*Para retirar a borda do campo*/
 }
 
-.controles button{
+button{
   padding: 10px 20px;
 }
 
@@ -39,6 +39,7 @@ ul{
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 ul li {
@@ -52,4 +53,9 @@ ul li {
 ul li input[type="checkbox"]{
   position: relative;
   top:4px
+}
+
+.inf-controles{
+  display: flex;
+  flex-direction: row-reverse;
 }

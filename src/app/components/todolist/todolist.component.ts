@@ -20,6 +20,10 @@ export class TodolistComponent implements OnInit {
     }
   }
 
+  cleanList() {
+    this.lista = []
+  }
+
 
   ngOnInit(): void {
   }
