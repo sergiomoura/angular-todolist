@@ -1,6 +1,9 @@
 <div class="container">
-  <input (keydown.enter)="addItem()" type="text" [(ngModel)]="novoTexto">
-  <button (click)="addItem()">Adicionar</button>
+
+  <div class="controles">
+    <input (keydown.enter)="addItem()" type="text" [(ngModel)]="novoTexto">
+    <button (click)="addItem()">Adicionar</button>
+  </div>
 
   <div class="listaVazia" *ngIf="lista.length==0">
     Você não possui itens na sula lista atual
