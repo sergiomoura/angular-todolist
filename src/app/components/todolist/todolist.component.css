@@ -47,12 +47,12 @@ ul li {
   padding: 0;
   color: white;
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 ul li input[type="checkbox"]{
   position: relative;
-  top:4px
+  top:2px
 }
 
 .inf-controles{
