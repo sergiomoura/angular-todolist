@@ -7,12 +7,22 @@ import { Item } from "../../models/Item";
 })
 export class TodolistComponent implements OnInit {
 
-  lista: Item[] = [
+  public novoTexto: string = "";
+
+  public lista: Item[] = [
     new Item("Teste 1..."),
     new Item("Teste 2...")
   ];
 
   constructor() { }
+
+  addItem() {
+    if (this.novoTexto != "") {
+      this.lista.push(new Item(this.novoTexto));
+      this.novoTexto = "";
+    }
+  }
+
 
   ngOnInit(): void {
   }
