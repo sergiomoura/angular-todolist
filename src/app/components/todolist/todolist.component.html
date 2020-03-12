@@ -10,9 +10,9 @@
   </div>
 
   <ul *ngIf="lista.length>0">
-    <li *ngFor="let item of lista" [ngClass]="{feito:item.feito}">
-      <input type="checkbox" [(ngModel)]="item.feito">
-      {{item.texto}}
+    <li *ngFor="let item of lista; let i = index" [ngClass]="{feito:item.feito}">
+      <input type="checkbox" id="chk_{{i}}" [(ngModel)]="item.feito">
+      <label for="chk_{{i}}">{{item.texto}}</label>
     </li>
   </ul>
 
