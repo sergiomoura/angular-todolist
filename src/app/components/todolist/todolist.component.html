@@ -1,1 +1,6 @@
-<p>todolist works!</p>
+<ul>
+  <li *ngFor="let item of lista" [ngClass]="{feito:item.feito}">
+    <input type="checkbox" [(ngModel)]="item.feito">
+    {{item.texto}}
+  </li>
+</ul>
