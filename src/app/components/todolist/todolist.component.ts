@@ -9,10 +9,7 @@ export class TodolistComponent implements OnInit {
 
   public novoTexto: string = "";
 
-  public lista: Item[] = [
-    new Item("Teste 1..."),
-    new Item("Teste 2...")
-  ];
+  public lista: Item[] = [];
 
   constructor() { }
 

@@ -1,8 +1,15 @@
-<input (keydown.enter)="addItem()" type="text" [(ngModel)]="novoTexto">
-<button (click)="addItem()">Adicionar</button>
-<ul>
-  <li *ngFor="let item of lista" [ngClass]="{feito:item.feito}">
-    <input type="checkbox" [(ngModel)]="item.feito">
-    {{item.texto}}
-  </li>
-</ul>
+<div class="container">
+  <input (keydown.enter)="addItem()" type="text" [(ngModel)]="novoTexto">
+  <button (click)="addItem()">Adicionar</button>
+
+  <div class="listaVazia" *ngIf="lista.length==0">
+    Você não possui itens na sula lista atual
+  </div>
+
+  <ul *ngIf="lista.length>0">
+    <li *ngFor="let item of lista" [ngClass]="{feito:item.feito}">
+      <input type="checkbox" [(ngModel)]="item.feito">
+      {{item.texto}}
+    </li>
+  </ul>
+</div>
